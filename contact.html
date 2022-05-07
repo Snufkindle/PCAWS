@@ -8,12 +8,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <title>PCAWS</title>
 </head>
+
+
 <body>
     <nav>
-        <div class="logo">
-            <a href="index.html" class="text-logo">
+        <div>
+            <a href="index.html" class="logo">
                 <img src="https://i.ibb.co/CVZW5dz/PCA-logo.png" height="65px">
                 <strong>PCAWS</strong>
                 &nbsp;Prostate Cancer Awareness
@@ -30,55 +33,106 @@
     </nav>
 
 
-    <div class="slideshow-container">
-        <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fnews.ibx.com%2Fwp-content%2Fuploads%2F2019%2F09%2FPCF_ribbon-1170x636.jpg&f=1&nofb=1"
-                style="width:100%; height: 900px;">
-            <div class="text">*we do not own any of the images*</div>
+
+
+
+
+
+
+    <div class="body-content">
+        <div class="p1">
+            <div class="header">Contat us</div>
+            <div class="p1-1">
+                <strong>Call :</strong> 09123456789<br><br>
+                
+                Please call us or contact us on our social media platforms for assistance with the following or any other inquiries you may have: <br>
+                
+                <ul>
+                    <li>
+                        Prostate Cancer-related information and referrals to patient-related programs or resources
+                    </li>
+                    <li>
+                        Volunteer opportunities
+                    </li>
+                    <li>
+                        Donations, website or event-related assistance <br><br>
+                    </li>
+                </ul>
+            
+                <strong>Cancer Information</strong><br>
+                At our National Cancer Information Center trained Cancer Information Specialists can answer questions 24 hours a day, every day of the year to empower you with accurate, up to date information to help you make educated health decisions.  We connect patients, caregivers, and family members with valuable services and resources.  Or ask us how you can get involved and support the fight against cancer.
+                
+            </div>
         </div>
-        <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-            <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.sghs.org%2Fimages%2FProstateCancer_FB_1200x628_FINAL.jpg&f=1&nofb=1"
-                style="width: 100%; height: 900px;">
-            <div class="text">*we do not own any of the images*</div>
-        </div>
-        <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcontent.presspage.com%2Fuploads%2F2478%2F1920_prostatecancerawareness.jpg%3F10000&f=1&nofb=1"
-                style="width: 100%; height: 900px;">
-            <div class="text">*we do not own any of the images*</div>
-        </div>
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
-    <br>
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
+        
 
 
-    <script>
-        var slideIndex = 0;
-        showSlides();
-        function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {
-                slideIndex = 1
-            }
-            slides[slideIndex - 1].style.display = "block";
-            setTimeout(showSlides, 3000); // Change image every 3 seconds
-            }
-    </script>
 
-    <p>taya si rian</p>
+
+
+
+
+
+    <footer>
+        <div class="footer-content">
+            <h3>Prostate Cancer Awareness</h3>
+            <p>We developed a foundation to raise awareness for prostate cancer. We felt like it's very necessary that men be more aware about prostate cancer and health in general. <br><br>"Ignoring Prostate Cancer won't beat it."</p>
+            <ul class="socials">
+                <li><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.youtube.com/watch?v=7_5MnsdQeQs"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="https://twitter.com/PCFnews"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="footer-bottom">
+            <p>copyright &copy;2022 PCAWS. Designed by <span>Ablog and Llanes</span></p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+    <style>
+        .body-content{
+            /* border-style: solid;
+            border-width: 1px; */
+            margin-top: 130px;
+            margin-right: 300px;
+            margin-left: 300px;
+            margin-bottom: 400px;
+        }
+        .p1{
+            background-color: #ffffff;
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 25px;
+            border-color: #093049;
+            padding: 25px;
+            padding-bottom: 30px;
+        }
+        .header{
+            color:#105d8d;
+            text-transform: uppercase;
+            text-align: left;
+            font-size: x-large;
+            font-weight: bolder;
+        }
+        .p1-1{
+            padding-top: 5px;
+            text-align: justify;
+        }
+        .p1-1 ul{
+            padding-left: 50px;
+        }
+
+    </style>
 
 </body>
 </html>
