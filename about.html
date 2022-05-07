@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,13 +8,17 @@
     <link rel="stylesheet" href="style1.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <title>PCAWS</title>
 </head>
+
+
 <body>
     <nav>
-        <div class="logo">
-            <a href="index.html" class="text-logo">
+        <div>
+            <a href="index.html" class="logo">
                 <img src="https://i.ibb.co/CVZW5dz/PCA-logo.png" height="65px">
                 <strong>PCAWS</strong>
                 &nbsp;Prostate Cancer Awareness
@@ -30,55 +35,95 @@
     </nav>
 
 
-    <div class="slideshow-container">
-        <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fnews.ibx.com%2Fwp-content%2Fuploads%2F2019%2F09%2FPCF_ribbon-1170x636.jpg&f=1&nofb=1"
-                style="width:100%; height: 900px;">
-            <div class="text">*we do not own any of the images*</div>
-        </div>
-        <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-            <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.sghs.org%2Fimages%2FProstateCancer_FB_1200x628_FINAL.jpg&f=1&nofb=1"
-                style="width: 100%; height: 900px;">
-            <div class="text">*we do not own any of the images*</div>
-        </div>
-        <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcontent.presspage.com%2Fuploads%2F2478%2F1920_prostatecancerawareness.jpg%3F10000&f=1&nofb=1"
-                style="width: 100%; height: 900px;">
-            <div class="text">*we do not own any of the images*</div>
-        </div>
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+
+
+
+
+
+    <div class="body-content">
+        <div class="header">About Us</div>
+        <!-- <img src="https://i.ibb.co/Qpn13t7/PCAWS-About-Background.png" style="width: 30%; margin-left: 35%; margin-right: 35%;">            -->
     </div>
-    <br>
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
+    <div class="p1">
+        PCAWS is known as Prostate Cancer Awareness which is a movement by young aspiring programmers to promote awareness on Prostate Cancer. <br><br>
+
+        We are an independent small team that focuses on making content that would help raise awareness about Prostate cancer. We aim to inform patients as a well-informed patients are their own best advocates and invaluable partners for physicians. PCAWS provides timely, comprehensive information to help patients and families make informed health care decisions. <br><br>
+        
+        We are here to help you.<br><br>
+        <img src="https://i.ibb.co/CVZW5dz/PCA-logo.png" style="width: 100px;">
     </div>
 
 
-    <script>
-        var slideIndex = 0;
-        showSlides();
-        function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {
-                slideIndex = 1
-            }
-            slides[slideIndex - 1].style.display = "block";
-            setTimeout(showSlides, 3000); // Change image every 3 seconds
-            }
-    </script>
 
-    <p>taya si rian</p>
+
+
+
+
+
+
+    <footer>
+        <div class="footer-content">
+            <h3>Prostate Cancer Awareness</h3>
+            <p>We developed a foundation to raise awareness for prostate cancer. We felt like it's very necessary that men be more aware about prostate cancer and health in general. <br><br>"Ignoring Prostate Cancer won't beat it."</p>
+            <ul class="socials">
+                <li><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.youtube.com/watch?v=7_5MnsdQeQs"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="https://twitter.com/PCFnews"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="footer-bottom">
+            <p>copyright &copy;2022 PCAWS. Designed by <span>Ablog and Llanes</span></p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+    
+    <style>
+        body {
+            font-family: 'Nunito Sans', sans-serif;
+            background-color: aliceblue;
+        }
+
+        .body-content {
+            padding-right: 300px;
+            padding-left: 300px;
+            padding-bottom: 0px;
+        }
+
+        .header {
+            font-size: 3em;
+            font-weight: 900;
+            /* text-shadow: 4px 4px 20px rgba(0, 0, 0, 0.671); */
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #0b3d5c;
+            text-align: center;
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+        .p1{
+            font-size: large;
+            text-align:center;;
+            padding-bottom: 500px;
+            padding-left: 250px;
+            padding-right: 250px;
+            color: #0b3d5c;
+            background-color: aliceblue;
+        }
+    </style>
+
 
 </body>
+
 </html>
